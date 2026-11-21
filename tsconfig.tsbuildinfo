@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/hud.tsx","./src/components/petscene.tsx","./src/components/pixelicon.tsx","./src/components/quotecard.tsx","./src/components/shoppopup.tsx","./src/components/taskspopup.tsx","./src/data/quotes.ts","./src/data/shopitems.ts","./src/data/tasks.ts","./src/data/wellbeing.ts","./src/lib/taskstore.ts"],"version":"5.9.3"}

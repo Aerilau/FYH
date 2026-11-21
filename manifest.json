@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "ProcrastiPet — Cozy New Tab",
+  "version": "0.1.0",
+  "description": "A cozy little corner for your new tab.",
+  "chrome_url_overrides": { "newtab": "index.html" },
+  "permissions": ["storage", "alarms"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["messages.js", "content.js", "peek-content.js", "work-nudge.js"],
+    "run_at": "document_idle"
+  }],
+  "action": { "default_title": "ProcrastiPet", "default_popup": "popup.html" },
+  "web_accessible_resources": [{
+    "resources": ["styles.css", "assets/pet-sprite.svg", "assets/message-snorlax.png", "assets/message-sprite.svg", "assets/work-snorlax.png"],
+    "matches": ["http://*/*", "https://*/*"]
+  }]
+}
